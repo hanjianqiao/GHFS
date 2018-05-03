@@ -11,4 +11,7 @@ LDFLAGS="$LDFLAGS -lintl"
 
 AC_PROG_CXX
 
+AC_DEFINE([LOCALEDIR], ["/Users/hanjianqiao/git/GHFS/po"], [Directory stores i18n files])
+AC_DEFINE([LOCALPKG], ["hello"], [i18n package domain name])
+
 AC_OUTPUT(Makefile src/Makefile)
