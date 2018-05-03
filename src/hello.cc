@@ -5,5 +5,5 @@ Hello::Hello(string name){
 }
 
 void Hello::say(){
-    cout << "My name is " << name << endl;
+    cout << _("My name is ") << name << endl;
 }
