@@ -3,6 +3,8 @@ AC_CONFIG_SRCDIR([src/main.cc])
 AM_INIT_AUTOMAKE
 
 INTI_REQUIRED_VERSION=1.0.7
+AC_CHECK_FUNCS([setlocale])
+AC_CHECK_HEADERS([libintl.h, locale.h])
 # PKG_CHECK_MODULES(INTI, inti-1.0 > $INTI_REQUIRED_VERSION)
 AC_SUBST(INTI_CFLAGS)
 AC_SUBST(INTI_LIBS)
@@ -10,6 +12,7 @@ AC_SUBST(INTI_LIBS)
 LDFLAGS="$LDFLAGS -lintl"
 
 AC_PROG_CXX
+AC_PROG_CC
 
 AC_DEFINE([LOCALEDIR], ["/Users/hanjianqiao/git/GHFS/po"], [Directory stores i18n files])
 AC_DEFINE([LOCALPKG], ["hello"], [i18n package domain name])
