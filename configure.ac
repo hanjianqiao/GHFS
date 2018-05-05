@@ -11,7 +11,7 @@ AC_CHECK_HEADERS([libintl.h, locale.h])
 AC_SUBST(INTI_CFLAGS)
 AC_SUBST(INTI_LIBS)
 
-LDFLAGS="$LDFLAGS -lintl"
+LDFLAGS="$LDFLAGS -lintl -lsdl2 -lpthread"
 
 AC_PROG_CXX
 AC_PROG_CC

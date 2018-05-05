@@ -1,4 +1,5 @@
 #include "hello.h"
+#include "voice.hpp"
 
 #include <iostream>
 
@@ -12,5 +13,6 @@ int main(int argc, char **argv){
 
     Hello hello(_("Joe"));
     hello.say();
+    say_hello();
     return EXIT_SUCCESS;
 }

@@ -101,3 +101,8 @@ config.status
 .deps
 
 hello
+
+* Media files
+*.wav
+*.mp3
+
