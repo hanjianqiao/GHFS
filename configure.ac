@@ -16,7 +16,7 @@ LDFLAGS="$LDFLAGS -lintl -lsdl2 -lpthread"
 AC_PROG_CXX
 AC_PROG_CC
 
-AC_DEFINE([LOCALEDIR], ["/Users/hanjianqiao/git/GHFS/po"], [Directory stores i18n files])
+AC_DEFINE([LOCALEDIR], ["/Users/hanjianqiao/git/hello/po"], [Directory stores i18n files])
 AC_DEFINE([LOCALPKG], ["hello"], [i18n package domain name])
 
 AC_OUTPUT(Makefile src/Makefile)
