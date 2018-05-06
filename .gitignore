@@ -106,3 +106,5 @@ hello
 *.wav
 *.mp3
 
+# OSX files
+.DS_Store
