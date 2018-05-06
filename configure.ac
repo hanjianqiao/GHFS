@@ -42,7 +42,7 @@ PKG_CHECK_MODULES([SDL2], [sdl2 > $SDL2_REQUIRED_VERSION])
 AC_SUBST([SDL2_CFLAGS])
 AC_SUBST([SDL2_LIBS])
 
-if [[ $build_linux == "yes" ]]; then
+if [[ $build_mac == "yes" ]]; then
         INTL_REQUIRED_VERSION=2.0.0
         PKG_CHECK_MODULES([INTL], [intl > $INTL_REQUIRED_VERSION])
         AC_SUBST([INTL_CFLAGS])
