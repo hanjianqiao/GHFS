@@ -1,9 +1,10 @@
-#include "hello.h"
 #include "voice.hpp"
 #include <cstdlib>
 #include <iostream>
-
+#include "hello.hpp"
 using namespace std;
+
+#define LOCALPKG    "hello"
 
 int main(int argc, char **argv){
     /* Setting the i18n environment */

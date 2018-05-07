@@ -1,4 +1,4 @@
-#include "hello.h"
+#include "hello.hpp"
 
 Hello::Hello(string name){
     this->name = name;
