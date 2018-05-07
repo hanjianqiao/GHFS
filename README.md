@@ -1,10 +1,3 @@
-# GHFS
-GNU Hello From Scratch
+# Hello
 
-You need to generate your own `configure` file:
-
-```
-aclocal
-autoconf
-automake --add-missing
-```
+Hello to the world!
