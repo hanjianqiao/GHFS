@@ -83,7 +83,7 @@ int say_hello(){
     pthread_t t;
     int i = 9;
     int rc;
-    rc = pthread_create(&t, NULL, say, (void *)i);
+    rc = pthread_create(&t, NULL, say, &i);
     if (rc) {
          cout << "Error:unable to create thread," << rc << endl;
          exit(-1);
