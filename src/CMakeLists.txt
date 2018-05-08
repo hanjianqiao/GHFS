@@ -13,6 +13,6 @@ link_directories()
 
 add_executable(hello main.cc hello.cc voice.cc)
 
-set (EXTRA_LIBS ${EXTRA_LIBS} SDL2 "${Intl_LIBRARIES}" "${Threads_LIBRARIES}")
+set (EXTRA_LIBS ${EXTRA_LIBS} SDL2 "${Intl_LIBRARIES}" "${CMAKE_THREAD_LIBS_INIT}")
 
 target_link_libraries (hello  ${EXTRA_LIBS})
