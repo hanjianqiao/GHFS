@@ -1,6 +1,3 @@
-cmake_minimum_required (VERSION 3.5)
-project (hello)
-
 SET(CMAKE_SYSROOT /)
 SET(CMAKE_C_COMPILER gcc)
 SET(CMAKE_CXX_COMPILER g++)
