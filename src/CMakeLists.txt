@@ -10,7 +10,7 @@ find_package(Intl)
 include_directories("${Intl_INCLUDE_DIRS}")
 link_directories()
 
-add_executable(hello main.cc hello.cc voice.cc hello.hpp voice.hpp)
+add_executable(hello main.cc hello.cc voice.cc)
 
 set (EXTRA_LIBS ${EXTRA_LIBS} SDL2 "${Intl_LIBRARIES}")
 
