@@ -33,7 +33,8 @@ void *say(void *data){
     /* Load the WAV */
     // the specs, length and buffer of our wav are filled
     if( SDL_LoadWAV(MUS_PATH, &wav_spec, &wav_buffer, &wav_length) == NULL ){
-      return (void*)1;
+        cout << "Failed to load wav files: " << MUS_PATH << endl;
+        return NULL;
     }
     // set the callback function
     wav_spec.callback = my_audio_callback;
@@ -59,7 +60,7 @@ void *say(void *data){
     // shut everything down
     SDL_CloseAudio();
     SDL_FreeWAV(wav_buffer);
-    return (void*)0;
+    return NULL;
 }
 
 // audio callback function
@@ -88,7 +89,7 @@ int say_hello(){
          cout << "Error:unable to create thread," << rc << endl;
          exit(-1);
     }
-    cout << "say..."<<endl;
+    cout << "say... " << rc << endl;
     pthread_join(t, NULL);
     return 0;
 }
