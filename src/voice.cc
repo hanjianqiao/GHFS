@@ -1,10 +1,11 @@
 #include <SDL2/SDL.h>
 #include <pthread.h>
 #include <iostream>
+#include <ios>
 
 using namespace std;
 
-#define MUS_PATH "hello.wav"
+#define MUS_PATH "../media4hello/audio/hello.wav"
 
 // prototype for our audio callback
 // see the implementation for more information
@@ -76,6 +77,10 @@ void my_audio_callback(void *userdata, Uint8 *stream, int len) {
     len = ( len > audio_len ? audio_len : len );
     SDL_memcpy (stream, audio_pos, len);                  // simply copy from one buffer into the other
     SDL_MixAudio(stream, audio_pos, len, SDL_MIX_MAXVOLUME);// mix from one buffer into another
+
+    for(int i = 0; i < len; i++){
+        printf("%X ", audio_pos[i]);
+    }
     
     audio_pos += len;
     audio_len -= len;
