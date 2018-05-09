@@ -21,8 +21,9 @@ static Uint32 audio_len; // remaining length of the sample we have to play
 void *say(void *data){
 
     // Initialize SDL.
-    if (SDL_Init(SDL_INIT_AUDIO) < 0)
-            return (void*)1;
+    if (SDL_Init(SDL_INIT_AUDIO) < 0){
+            return NULL;
+    }
 
     // local variables
     static Uint32 wav_length; // length of our sample
@@ -45,8 +46,8 @@ void *say(void *data){
     
     /* Open the audio device */
     if ( SDL_OpenAudio(&wav_spec, NULL) < 0 ){
-      fprintf(stderr, "Couldn't open audio: %s\n", SDL_GetError());
-      exit(-1);
+        fprintf(stderr, "Couldn't open audio: %s\n", SDL_GetError());
+        exit(-1);
     }
     
     /* Start playing */
