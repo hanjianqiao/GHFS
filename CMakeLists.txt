@@ -2,7 +2,6 @@ cmake_minimum_required (VERSION 3.5)
 
 project(hello)
 add_subdirectory(src)
-add_subdirectory(po)
 
 SET(_potFile po/${PROJECT_NAME}.pot)
 SET(_src_list src/hello.cc src/voice.cc src/main.cc)
@@ -39,3 +38,5 @@ endforeach()
 ADD_CUSTOM_TARGET(po_update
     DEPENDS ${PO_UP_DEP}
 )
+
+add_subdirectory(po)
