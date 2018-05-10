@@ -1,15 +1,15 @@
-# French translations for hello package.
-# Copyright (C) 2018 THE hello'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the hello package.
-# lanchitour <hanjianqiao@gmail.com>, 2018.
+# French translations for PACKAGE package.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# lanchitour <lct@lctmp.local>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: hello 0.1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 11:16+0800\n"
-"PO-Revision-Date: 2018-05-03 11:18+0800\n"
-"Last-Translator: lanchitour <hanjianqiao@gmail.com>\n"
+"POT-Creation-Date: 2018-05-10 22:56+0800\n"
+"PO-Revision-Date: 2018-05-10 23:07+0800\n"
+"Last-Translator: lanchitour <lct@lctmp.local>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: src/main.cc:8
+#: src/main.cc:13
 msgid "Joe"
 msgstr ""
 
