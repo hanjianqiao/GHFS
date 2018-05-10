@@ -14,4 +14,4 @@ set(EXTRA_LIBS ${EXTRA_LIBS} SDL2 ${Intl_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 
 target_link_libraries(hello ${EXTRA_LIBS})
 
-add_definitions(-DLOCALPKG="hello")
+add_definitions(-DLOCALPKG="hello" -DLOCALDIR="${CMAKE_SOURCE_DIR}")

@@ -7,7 +7,7 @@ using namespace std;
 int main(int argc, char **argv){
     /* Setting the i18n environment */
     setlocale (LC_ALL, "");
-    bindtextdomain (LOCALPKG, (string(getenv("PWD")) + "/po").c_str());
+    bindtextdomain (LOCALPKG, (string(LOCALDIR) + "/po").c_str());
     textdomain (LOCALPKG);
 
     Hello hello(_("Joe"));
