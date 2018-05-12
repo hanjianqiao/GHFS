@@ -5,8 +5,6 @@
 
 using namespace std;
 
-#define MUS_PATH "../media4hello/audio/hello.wav"
-
 // prototype for our audio callback
 // see the implementation for more information
 void my_audio_callback(void *userdata, Uint8 *stream, int len);
@@ -34,8 +32,8 @@ void *say(void *data){
     
     /* Load the WAV */
     // the specs, length and buffer of our wav are filled
-    if( SDL_LoadWAV(MUS_PATH, &wav_spec, &wav_buffer, &wav_length) == NULL ){
-        cout << "Failed to load wav files: " << MUS_PATH << endl;
+    if( SDL_LoadWAV((string(AUDIODIR) + "hello.wav").c_str(), &wav_spec, &wav_buffer, &wav_length) == NULL ){
+        cout << "Failed to load wav files: " << string(AUDIODIR) + "hello.wav" << endl;
         return NULL;
     }
     // set the callback function
